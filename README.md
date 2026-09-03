@@ -3,8 +3,6 @@
 
 **Universe:** EMAAR UH Equity, EMAARDEV UH Equity
 **Period:** 1–30 September 2025
-**Sessions:** 21 per stock
-**Rows processed:** 181,151
 
 ## Strategy
 
