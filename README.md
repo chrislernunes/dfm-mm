@@ -4,7 +4,7 @@
 **Universe:** EMAAR UH Equity, EMAARDEV UH Equity
 **Period:** 1–30 September 2025
 
-## Strategy
+## Outline
 
 Each stock-day is simulated independently.
 
