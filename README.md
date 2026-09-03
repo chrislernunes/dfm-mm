@@ -77,7 +77,6 @@ This is an experimental variant rather than an optimized strategy. No parameter 
 
 `validation_report.txt` contains data-quality, fill, refill, and exposure diagnostics.
 
-## Running
 
 Install dependencies:
 
