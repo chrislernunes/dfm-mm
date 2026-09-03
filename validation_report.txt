@@ -1,0 +1,38 @@
+==============================================================================
+DATA VALIDATION REPORT
+==============================================================================
+Stocks processed: 2 -> ['EMAAR UH Equity', 'EMAARDEV UH Equity']
+Trading days processed (stock-day pairs): 42
+
+Total rows processed:                            181,151
+  BID rows:                                       61,328
+  ASK rows:                                       61,269
+  TRADE rows:                                     58,554
+  Unrecognized Type rows:                              0
+
+BID/ASK rows with price<=0 (invalid/no quote):     1,732
+  (expected: pre-open warm-up and closing-auction phase only)
+
+TRADE rows falling inside the [10:02:00,14:45:00) live window:  52,198
+  ... matched our bid (price==best bid):          26,954
+  ... matched our ask (price==best ask):          24,959
+  ... matched neither side:                          282
+  ... locked market, unresolved (see README):          3
+
+Simulated fills generated (qty>0 after all caps):  28,702
+Refills applied:                                  28,298
+Refills skipped (scheduled at/after 14:45:00):       404
+
+Exposure cap check (every fill, every day):
+  Cap violations on a risk-increasing fill (should be 0):     0
+  Mark-to-market drift above limit on a risk-reducing fill:   9
+    (price moved between fills; the fill itself only ever reduced exposure --
+     see README 'Exposure cap: fill-time vs mark-to-market' for the full explanation)
+
+Rows skipped at load time (unparseable Dates/Price/Size): see stderr warnings above, if any.
+
+Days flagged with unusual conditions (3):
+  - EMAAR UH Equity 2025-09-24: mark-to-market exposure briefly above AED 1.5m on 5 risk-reducing fill(s) (max=1505506 AED) -- price drift while cutting inventory, not a cap breach; see README.
+  - EMAARDEV UH Equity 2025-09-18: mark-to-market exposure briefly above AED 1.5m on 3 risk-reducing fill(s) (max=1509970 AED) -- price drift while cutting inventory, not a cap breach; see README.
+  - EMAARDEV UH Equity 2025-09-25: mark-to-market exposure briefly above AED 1.5m on 1 risk-reducing fill(s) (max=1505342 AED) -- price drift while cutting inventory, not a cap breach; see README.
+==============================================================================

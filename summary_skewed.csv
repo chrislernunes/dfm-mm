@@ -1,0 +1,3 @@
+stock,total_pnl_aed,average_daily_pnl_aed,number_of_trading_days,profitable_days,losing_days,flat_days,total_volume_shares,total_gross_traded_value_aed,max_drawdown_aed,total_number_of_fills
+EMAAR UH Equity,55545.75,2645.04,21,16,5,0,16198697.0,225213892.25,-3281.05,19115
+EMAARDEV UH Equity,-37783.25,-1799.2,21,9,12,0,8051368.0,114116758.05,-28428.95,9407
