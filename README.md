@@ -50,7 +50,7 @@ A sensitivity run with `--session-end 15:00:00` was also performed. Total P&L is
 
 ### After fees
 
-Using the DFM fee schedule from Task 2:
+Using the DFM fee:
 
 | Stock              | Variable Fee |  Flat Fee | Total Fees |  P&L After Fees |
 | ------------------ | -----------: | --------: | ---------: | --------------: |
